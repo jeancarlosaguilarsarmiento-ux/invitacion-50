@@ -1766,26 +1766,29 @@ body {
 
     .surprise-badge {
 
-        top: 10px;
+    top: 10px;
+    left: 50%;
 
-        font-size: 13px;
+    width: calc(100vw - 24px);
 
-        font-weight: 600;
+    max-width: none;
 
-        letter-spacing: 1px;
+    padding: 11px 18px;
 
-        padding: 11px 18px;
+    font-size: 13px;
 
-        gap: 8px;
+    font-weight: 600;
 
-        max-width: calc(100vw - 30px);
+    letter-spacing: 1px;
 
-       max-width: 520px;
+    gap: 8px;
 
-        text-align: center;
+    text-align: center;
 
-        white-space: normal;
-    }
+    white-space: normal;
+
+    justify-content: center;
+}
 
 
     .envelope-container {
