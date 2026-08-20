@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080808">
+
+    <title>Javier López Betancourt | 50 años</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- =========================================
+     MÚSICA
+========================================= -->
+
+<audio id="backgroundMusic" loop>
+    <source src="musica/celebracion.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton"
+        class="music-button"
+        aria-label="Controlar música">
+    ♫
+</button>
+
+
+<!-- =========================================
+     MENSAJE SORPRESA FIJO
+========================================= -->
+
+<div class="surprise-badge">
+    <span>🤫</span>
+    <span>SHHH... No le digas a Javier ¡ES UNA SORPRESA!</span>
+</div>
+
+
+<!-- =========================================
+     PANTALLA DEL SOBRE
+========================================= -->
+
+<section id="opening" class="opening">
+
+    <div class="opening-content">
+
+        <div class="secret-message">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+        <p class="small-text">
+            UNA CELEBRACIÓN ESPECIAL
+        </p>
+
+
+        <div class="envelope-container">
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter">
+
+                    <div class="letter-content">
+
+                        <span>
+                            JAVIER LÓPEZ BETANCOURT
+                        </span>
+
+                        <strong>
+                            50
+                        </strong>
+
+                        <span>
+                            AÑOS
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+        </div>
+
+
+        <p class="instruction">
+            Has recibido una invitación especial
+        </p>
+
+        <p class="secret-subtitle">
+            Pero recuerda... 🤫
+            <br>
+            el cumpleañero no puede enterarse.
+        </p>
+
+
+        <button id="openButton"
+                class="open-button">
+
+            ABRIR INVITACIÓN
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INVITACIÓN
+========================================= -->
+
+<main id="invitation" class="invitation">
+
+
+    <!-- =====================================
+         PORTADA
+    ====================================== -->
+
+    <section class="hero">
+
+        <div class="secret-ribbon">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="eyebrow">
+            CELEBRAMOS UNA VIDA DE HISTORIAS
+        </p>
+
+
+        <h1>
+            Javier López Betancourt
+        </h1>
+
+
+        <div class="number">
+            50
+        </div>
+
+
+        <p class="years">
+            AÑOS
+        </p>
+
+
+        <div class="line"></div>
+
+
+        <p class="welcome">
+            Una noche para celebrar,
+            recordar y compartir.
+        </p>
+
+
+        <p class="secret-text">
+            🤫 Pero hay un pequeño secreto...
+            <br>
+            <strong>
+                ¡El cumpleañero no puede enterarse!
+            </strong>
+        </p>
+
+
+        <button id="continueButton"
+                class="continue-button">
+
+            DESCUBRIR LA INVITACIÓN
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =====================================
+         FRASE
+    ====================================== -->
+
+    <section class="section quote-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="section-label">
+            CINCUENTA AÑOS
+        </p>
+
+
+        <h2>
+            Una vida para celebrar
+        </h2>
+
+
+        <div class="gold-line"></div>
+
+
+        <p class="quote">
+
+            “50 años de historias, aprendizajes,
+            alegrías y momentos compartidos.
+            Queremos celebrar la vida de Javier y compartir
+            esta fecha tan especial contigo.”
+
+        </p>
+
+
+        <p class="secret-text">
+            Esta celebración es secreta.
+            <br>
+            <strong>
+                Por favor... ¡que Javier no se entere! 🤫
+            </strong>
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CUENTA REGRESIVA
+    ====================================== -->
+
+    <section class="countdown-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="section-label">
+            LA CUENTA REGRESIVA COMIENZA
+        </p>
+
+
+        <h2>
+            Nos vemos en...
+        </h2>
+
+
+        <div class="countdown">
+
+            <div class="count-box">
+
+                <span id="days">
+                    00
+                </span>
+
+                <small>
+                    DÍAS
+                </small>
+
+            </div>
+
+
+            <div class="count-box">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <small>
+                    HORAS
+                </small>
+
+            </div>
+
+
+            <div class="count-box">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <small>
+                    MINUTOS
+                </small>
+
+            </div>
+
+
+            <div class="count-box">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <small>
+                    SEGUNDOS
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <p class="countdown-note">
+            🤫 El reloj corre...
+            <br>
+            ¡pero que Javier no lo vea!
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================
+         FECHA
+    ====================================== -->
+
+    <section class="section event-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="section-label">
+            RESERVA LA FECHA
+        </p>
+
+
+        <h2>
+            19 de septiembre
+        </h2>
+
+
+        <p class="event-year">
+            2026
+        </p>
+
+
+        <div class="event-details">
+
+
+            <div class="event-item">
+
+                <div class="event-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <strong>
+                        Eucaristía
+                    </strong>
+
+                    <span>
+                        6:00 p. m.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="event-item">
+
+                <div class="event-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <strong>
+                        Recepción
+                    </strong>
+
+                    <span>
+                        7:00 p. m.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button id="calendarButton"
+                class="gold-button">
+
+            📅 AGREGAR AL CALENDARIO
+
+        </button>
+
+
+        <p class="secret-note">
+            🤫 Guarda la fecha...
+            <br>
+            y recuerda mantener el secreto.
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================
+         UBICACIÓN
+    ====================================== -->
+
+    <section class="location-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="section-label">
+            EL LUGAR
+        </p>
+
+
+        <h2>
+            ¿Cómo llegar?
+        </h2>
+
+
+        <p class="location-text">
+
+            Hemos preparado este momento especial
+            pensando en compartirlo contigo en el
+            Restaurante y casa de Banquetes El Comercio
+
+        </p>
+
+
+        <div class="location-card">
+
+
+            <div class="location-pin">
+                ✦
+            </div>
+
+
+            <h3>
+                Lugar de la celebración
+            </h3>
+
+
+            <p>
+                Consulta la ubicación exacta
+                para llegar fácilmente.
+            </p>
+
+
+            <a
+                    href="https://maps.app.goo.gl/yaM3xs4EpFqEwQkq8"
+                    target="_blank"
+                    rel="noopener"
+                    class="gold-button">
+
+                📍 CÓMO LLEGAR
+
+            </a>
+
+
+            <div class="location-secret">
+                🤫 Recuerda:
+                <br>
+                <strong>
+                    ¡Es una sorpresa!
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CONFIRMACIÓN
+    ====================================== -->
+
+    <section class="confirmation-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <p class="section-label">
+            TU PRESENCIA ES IMPORTANTE
+        </p>
+
+
+        <h2>
+            ¿Nos acompañas?
+        </h2>
+
+
+        <p>
+
+            Confirma tu asistencia para que podamos
+            preparar todo para esta noche especial.
+
+        </p>
+
+
+        <div class="guest-selector">
+
+            <label for="guests">
+                ¿Cuántas personas asistirán?
+            </label>
+
+
+            <select id="guests">
+
+                <option value="1">
+                    1 persona
+                </option>
+
+                <option value="2">
+                    2 personas
+                </option>
+
+                <option value="3">
+                    3 personas
+                </option>
+
+                <option value="4">
+                    4 personas
+                </option>
+
+                <option value="5">
+                    5 personas
+                </option>
+
+                <option value="6">
+                    6 personas
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="confirmation-buttons">
+
+
+            <button id="yesButton"
+                    class="confirm-button">
+
+                ✓ SÍ, ASISTIRÉ
+
+            </button>
+
+
+            <button id="noButton"
+                    class="decline-button">
+
+                NO PODRÉ ASISTIR
+
+            </button>
+
+
+        </div>
+
+
+        <p class="confirmation-note">
+
+            La confirmación se enviará
+            directamente por WhatsApp.
+
+        </p>
+
+
+        <p class="big-secret">
+
+            🤫 SHHH...
+
+            <br>
+
+            <strong>
+                ¡Javier no puede enterarse!
+            </strong>
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CIERRE
+    ====================================== -->
+
+    <section class="final-section reveal">
+
+        <div class="section-secret">
+            🤫 SHHH... ES UNA SORPRESA
+        </div>
+
+
+        <div class="final-number">
+            50
+        </div>
+
+
+        <div class="gold-line"></div>
+
+
+        <p>
+
+            Gracias por formar parte
+            de esta historia.
+
+        </p>
+
+
+        <strong>
+            JAVIER LÓPEZ BETANCOURT
+        </strong>
+
+
+        <span>
+            19 · 09 · 2026
+        </span>
+
+
+        <p class="final-secret">
+
+            🤫 Y recuerda...
+
+            <br><br>
+
+            <strong>
+                ESTA NOCHE ES UN SECRETO.
+            </strong>
+
+            <br>
+
+            El cumpleañero
+            no puede enterarse.
+
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
