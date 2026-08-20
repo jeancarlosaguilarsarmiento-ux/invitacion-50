@@ -1774,11 +1774,13 @@ body {
 
         letter-spacing: 1px;
 
-        padding: 11px 16px;
+        padding: 11px 18px;
 
         gap: 8px;
 
-        max-width: calc(100vw - 20px);
+        max-width: calc(100vw - 30px);
+
+       max-width: 520px;
 
         text-align: center;
 
