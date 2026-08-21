@@ -1761,34 +1761,37 @@ body {
 
 @media (max-width: 600px) {
 
-    @media (max-width: 600px) {
+    /* MENSAJE SECRETO FIJO */
 
     .surprise-badge {
 
-    top: 10px;
-    left: 50%;
+        top: 10px;
 
-    width: calc(100vw - 24px);
+        left: 50%;
 
-    max-width: none;
+        width: calc(100vw - 24px);
 
-    padding: 11px 18px;
+        max-width: none;
 
-    font-size: 13px;
+        padding: 11px 18px;
 
-    font-weight: 600;
+        font-size: 13px;
 
-    letter-spacing: 1px;
+        font-weight: 600;
 
-    gap: 8px;
+        letter-spacing: 1px;
 
-    text-align: center;
+        gap: 8px;
 
-    white-space: normal;
+        text-align: center;
 
-    justify-content: center;
-}
+        white-space: normal;
 
+        justify-content: center;
+    }
+
+
+    /* PANTALLA INICIAL */
 
     .envelope-container {
 
@@ -1806,49 +1809,180 @@ body {
 
     .small-text {
 
-        font-size: 9px;
+        font-size: 11px;
 
-        letter-spacing: 3px;
+        letter-spacing: 2.5px;
+    }
+
+
+    .secret-subtitle {
+
+        font-size: 13px;
+
+        line-height: 1.65;
     }
 
 
     .instruction {
 
-        font-size: 12px;
+        font-size: 14px;
+
+        line-height: 1.6;
     }
 
+
+    .open-button,
+    .continue-button {
+
+        font-size: 12px;
+
+        padding: 15px 24px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    /* PORTADA */
 
     .hero {
 
         padding:
-            80px 20px 40px;
+            95px 20px 45px;
     }
 
 
+    .secret-ribbon {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.5;
+    }
+
+
+    .eyebrow {
+
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+
+        line-height: 1.5;
+    }
+
+
+    .welcome {
+
+        font-size: 18px;
+
+        line-height: 1.75;
+    }
+
+
+    .secret-text {
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    /* SECCIONES */
+
+    .section {
+
+        min-height: 90vh;
+
+        padding:
+            85px 20px;
+    }
+
+
+    .section-secret {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .section-label {
+
+        font-size: 12px;
+
+        letter-spacing: 2.5px;
+
+        line-height: 1.5;
+    }
+
+
+    .section h2 {
+
+        font-size:
+            clamp(
+                32px,
+                9vw,
+                50px
+            );
+
+        line-height: 1.15;
+    }
+
+
+    /* FRASE */
+
+    .quote {
+
+        font-size: 20px;
+
+        line-height: 1.75;
+    }
+
+
+    /* CUENTA REGRESIVA */
+
     .countdown {
 
-        gap: 5px;
+        gap: 6px;
     }
 
 
     .count-box {
 
         padding:
-            15px 2px;
+            15px 3px;
     }
 
 
     .count-box span {
 
-        font-size: 28px;
+        font-size: 30px;
     }
 
 
     .count-box small {
 
-        font-size: 7px;
+        font-size: 9px;
 
         letter-spacing: 1px;
+    }
+
+
+    .countdown-note {
+
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+
+    /* EVENTO */
+
+    .event-year {
+
+        font-size: 13px;
+
+        letter-spacing: 4px;
     }
 
 
@@ -1859,15 +1993,203 @@ body {
         gap: 25px;
 
         align-items: flex-start;
+
+        width: auto;
     }
 
 
-    .section {
+    .event-item strong {
 
-        min-height: 90vh;
+        font-size: 18px;
+    }
+
+
+    .event-item span {
+
+        font-size: 14px;
+    }
+
+
+    .secret-note {
+
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+
+    .gold-button {
+
+        min-width: 220px;
+
+        padding: 15px 22px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    /* UBICACIÓN */
+
+    .location-section {
 
         padding:
-            80px 20px;
+            85px 20px;
+    }
+
+
+    .location-text {
+
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+
+    .location-card {
+
+        padding:
+            40px 22px;
+    }
+
+
+    .location-card h3 {
+
+        font-size: 23px;
+
+        line-height: 1.3;
+    }
+
+
+    .location-card p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .location-secret {
+
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+
+    /* CONFIRMACIÓN */
+
+    .confirmation-section {
+
+        padding:
+            85px 20px;
+    }
+
+
+    .confirmation-section h2 {
+
+        font-size:
+            clamp(
+                35px,
+                10vw,
+                52px
+            );
+
+        line-height: 1.15;
+    }
+
+
+    .confirmation-section > p:not(.section-label):not(.confirmation-note):not(.big-secret) {
+
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+
+    .guest-selector label {
+
+        font-size: 13px;
+    }
+
+
+    .guest-selector select {
+
+        font-size: 15px;
+
+        padding: 14px 18px;
+    }
+
+
+    .confirm-button,
+    .decline-button {
+
+        font-size: 11px;
+
+        padding: 16px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .confirmation-note {
+
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+
+    .big-secret {
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+
+    /* CIERRE */
+
+    .final-section {
+
+        padding:
+            90px 20px;
+    }
+
+
+    .final-section p {
+
+        font-size: 19px;
+
+        line-height: 1.7;
+    }
+
+
+    .final-section > strong {
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.5;
+    }
+
+
+    .final-section span {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .final-secret {
+
+        font-size: 13px !important;
+
+        line-height: 1.8;
+
     }
 
 }
