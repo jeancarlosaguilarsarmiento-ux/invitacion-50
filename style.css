@@ -33,7 +33,6 @@ body {
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
-
     z-index: 250;
 
     display: flex;
@@ -42,10 +41,10 @@ body {
 
     padding: 8px 14px;
 
-    border: 1px solid rgba(169, 137, 80, .55);
+    border: 1px solid rgba(169,137,80,.55);
     border-radius: 30px;
 
-    background: rgba(10, 9, 7, .92);
+    background: rgba(10,9,7,.88);
 
     backdrop-filter: blur(8px);
 
@@ -58,7 +57,7 @@ body {
     white-space: nowrap;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, .35);
+        0 8px 25px rgba(0,0,0,.35);
 }
 
 .surprise-badge span:first-child {
@@ -72,7 +71,6 @@ body {
 
 .music-button {
     position: fixed;
-
     right: 18px;
     bottom: 18px;
 
@@ -81,7 +79,7 @@ body {
 
     border-radius: 50%;
 
-    background: rgba(20, 18, 14, .92);
+    background: rgba(20,18,14,.92);
 
     border: 1px solid #a98950;
 
@@ -94,7 +92,7 @@ body {
     z-index: 200;
 
     box-shadow:
-        0 5px 20px rgba(0, 0, 0, .4);
+        0 5px 20px rgba(0,0,0,.4);
 
     transition:
         transform .3s ease,
@@ -103,28 +101,24 @@ body {
 
 .music-button:hover {
     transform: scale(1.08);
-
     background: #a98950;
-
     color: #111;
 }
 
 .music-button.playing {
-    animation:
-        musicPulse 2s infinite;
+    animation: musicPulse 2s infinite;
 }
 
 @keyframes musicPulse {
 
-    0%,
-    100% {
+    0%, 100% {
         box-shadow:
-            0 0 0 rgba(169, 137, 80, 0);
+            0 0 0 rgba(169,137,80,0);
     }
 
     50% {
         box-shadow:
-            0 0 22px rgba(169, 137, 80, .5);
+            0 0 22px rgba(169,137,80,.5);
     }
 }
 
@@ -135,7 +129,6 @@ body {
 
 .opening {
     position: fixed;
-
     inset: 0;
 
     display: flex;
@@ -181,10 +174,8 @@ body {
     color: #c7a25e;
 
     font-family: Arial, sans-serif;
-
     font-size: 9px;
     font-weight: bold;
-
     letter-spacing: 3px;
 
     animation:
@@ -197,16 +188,13 @@ body {
     color: #817a6f;
 
     font-family: Arial, sans-serif;
-
     font-size: 11px;
-
     line-height: 1.6;
 }
 
 @keyframes secretPulse {
 
-    0%,
-    100% {
+    0%, 100% {
         opacity: .65;
     }
 
@@ -226,10 +214,8 @@ body {
     color: #c9a96e;
 
     font-family: Arial, sans-serif;
-
     font-size: 11px;
     font-weight: 600;
-
     letter-spacing: 4px;
 }
 
@@ -257,7 +243,7 @@ body {
 
     filter:
         drop-shadow(
-            0 25px 30px rgba(0, 0, 0, .55)
+            0 25px 30px rgba(0,0,0,.55)
         );
 }
 
@@ -308,7 +294,7 @@ body {
         );
 
     box-shadow:
-        0 5px 20px rgba(0, 0, 0, .3);
+        0 5px 20px rgba(0,0,0,.3);
 }
 
 .letter-content {
@@ -332,9 +318,7 @@ body {
 
 .letter-content strong {
     font-size: 55px;
-
     font-weight: normal;
-
     color: #9c7739;
 }
 
@@ -421,9 +405,7 @@ body {
     color: #aaa294;
 
     font-family: Arial, sans-serif;
-
     font-size: 13px;
-
     letter-spacing: 1px;
 }
 
@@ -443,10 +425,8 @@ body {
     color: #d7b978;
 
     font-family: Arial, sans-serif;
-
     font-size: 11px;
     font-weight: bold;
-
     letter-spacing: 2px;
 
     cursor: pointer;
@@ -460,7 +440,6 @@ body {
 .open-button:hover,
 .continue-button:hover {
     background: #b18b50;
-
     color: #111;
 
     transform:
@@ -485,14 +464,14 @@ body {
         visibility 1.5s ease;
 }
 
-.invitation.show {
-    opacity: 1;
-    visibility: visible;
-}
-
 
 /* =========================================
-   DESTELLOS ELEGANTES
+   DESTELLOS DORADOS
+   CORRECCIÓN:
+   - Capa independiente
+   - Sin transform
+   - Sin filter
+   - Sin alterar fondos
 ========================================= */
 
 .invitation::before {
@@ -500,7 +479,11 @@ body {
 
     position: fixed;
 
-    inset: 0;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
 
     z-index: 2;
 
@@ -509,72 +492,87 @@ body {
     background-image:
 
         radial-gradient(
-            circle at 7% 18%,
-            rgba(255, 231, 170, .95) 0,
-            rgba(255, 231, 170, .95) 1px,
-            transparent 1.8px
+            circle at 7% 14%,
+            rgba(255,220,150,.95) 0,
+            rgba(255,220,150,.95) 1.5px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 18% 73%,
-            rgba(255, 255, 255, .85) 0,
-            rgba(255, 255, 255, .85) 1px,
-            transparent 1.8px
+            circle at 17% 32%,
+            rgba(255,255,255,.65) 0,
+            rgba(255,255,255,.65) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 31% 29%,
-            rgba(214, 181, 112, .8) 0,
-            rgba(214, 181, 112, .8) 1px,
-            transparent 1.8px
+            circle at 28% 74%,
+            rgba(221,181,105,.85) 0,
+            rgba(221,181,105,.85) 1.5px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 45% 84%,
-            rgba(255, 255, 255, .75) 0,
-            rgba(255, 255, 255, .75) 1px,
-            transparent 1.8px
+            circle at 38% 20%,
+            rgba(255,235,185,.8) 0,
+            rgba(255,235,185,.8) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 62% 17%,
-            rgba(255, 225, 160, .9) 0,
-            rgba(255, 225, 160, .9) 1px,
-            transparent 1.8px
+            circle at 47% 83%,
+            rgba(255,255,255,.6) 0,
+            rgba(255,255,255,.6) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 76% 63%,
-            rgba(255, 255, 255, .8) 0,
-            rgba(255, 255, 255, .8) 1px,
-            transparent 1.8px
+            circle at 61% 17%,
+            rgba(255,215,135,.95) 0,
+            rgba(255,215,135,.95) 1.5px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 87% 32%,
-            rgba(214, 181, 112, .9) 0,
-            rgba(214, 181, 112, .9) 1px,
-            transparent 1.8px
+            circle at 72% 43%,
+            rgba(255,255,255,.65) 0,
+            rgba(255,255,255,.65) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 94% 86%,
-            rgba(255, 255, 255, .75) 0,
-            rgba(255, 255, 255, .75) 1px,
-            transparent 1.8px
+            circle at 81% 69%,
+            rgba(216,174,96,.9) 0,
+            rgba(216,174,96,.9) 1.5px,
+            transparent 3px
+        ),
+
+        radial-gradient(
+            circle at 90% 27%,
+            rgba(255,220,150,.9) 0,
+            rgba(255,220,150,.9) 1.5px,
+            transparent 3px
+        ),
+
+        radial-gradient(
+            circle at 95% 86%,
+            rgba(255,255,255,.65) 0,
+            rgba(255,255,255,.65) 1px,
+            transparent 3px
         );
 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    opacity: .9;
+    opacity: .7;
 
     animation:
-        starsTwinkle 4s ease-in-out infinite alternate;
+        starsTwinkle 4.5s ease-in-out infinite alternate;
 }
 
 
 /* =========================================
-   HALOS DE LUZ
+   BRILLO AMBIENTAL
 ========================================= */
 
 .invitation::after {
@@ -582,41 +580,37 @@ body {
 
     position: fixed;
 
-    inset: 0;
+    top: 0;
+    left: 0;
 
-    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1;
 
     pointer-events: none;
 
-    background-image:
+    background:
 
         radial-gradient(
-            circle at 7% 18%,
-            rgba(255, 218, 145, .20) 0,
-            rgba(255, 218, 145, .08) 4px,
-            transparent 10px
+            circle at 12% 18%,
+            rgba(201,169,110,.10),
+            transparent 18%
         ),
 
         radial-gradient(
-            circle at 62% 17%,
-            rgba(255, 218, 145, .18) 0,
-            rgba(255, 218, 145, .06) 4px,
-            transparent 10px
+            circle at 83% 30%,
+            rgba(201,169,110,.08),
+            transparent 20%
         ),
 
         radial-gradient(
-            circle at 87% 32%,
-            rgba(255, 218, 145, .18) 0,
-            rgba(255, 218, 145, .06) 4px,
-            transparent 10px
+            circle at 50% 72%,
+            rgba(201,169,110,.05),
+            transparent 25%
         );
 
-    background-repeat: no-repeat;
-
-    opacity: .7;
-
-    animation:
-        glowTwinkle 5s ease-in-out infinite alternate;
+    opacity: .8;
 }
 
 
@@ -629,35 +623,33 @@ body {
     z-index: 3;
 }
 
+.invitation.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================
+   ANIMACIÓN DE DESTELLOS
+   CORREGIDA
+========================================= */
 
 @keyframes starsTwinkle {
 
     0% {
-        opacity: .45;
+        opacity: .25;
     }
 
-    50% {
+    35% {
+        opacity: .40;
+    }
+
+    65% {
+        opacity: .65;
+    }
+
+    100% {
         opacity: .85;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@keyframes glowTwinkle {
-
-    0% {
-        opacity: .35;
-    }
-
-    50% {
-        opacity: .7;
-    }
-
-    100% {
-        opacity: .45;
     }
 }
 
@@ -693,15 +685,13 @@ body {
 
     padding: 8px 15px;
 
-    border-top: 1px solid rgba(169, 137, 80, .5);
-    border-bottom: 1px solid rgba(169, 137, 80, .5);
+    border-top: 1px solid rgba(169,137,80,.5);
+    border-bottom: 1px solid rgba(169,137,80,.5);
 
     color: #b99557;
 
     font-family: Arial, sans-serif;
-
     font-size: 8px;
-
     letter-spacing: 3px;
 }
 
@@ -711,9 +701,7 @@ body {
     color: #c6a96a;
 
     font-family: Arial, sans-serif;
-
     font-size: 10px;
-
     letter-spacing: 4px;
 
     opacity: 0;
@@ -735,7 +723,6 @@ body {
         );
 
     font-weight: normal;
-
     letter-spacing: 2px;
 
     opacity: 0;
@@ -786,7 +773,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 12px;
-
     letter-spacing: 8px;
 
     color: #d8c7a5;
@@ -811,7 +797,7 @@ body {
 
     padding: 4px;
 
-    border: 1px solid rgba(201, 169, 110, .75);
+    border: 1px solid rgba(201,169,110,.75);
 
     background:
         linear-gradient(
@@ -822,8 +808,8 @@ body {
         );
 
     box-shadow:
-        0 15px 45px rgba(0, 0, 0, .55),
-        0 0 35px rgba(169, 137, 80, .12);
+        0 15px 45px rgba(0,0,0,.55),
+        0 0 35px rgba(169,137,80,.12);
 
     position: relative;
 
@@ -837,7 +823,7 @@ body {
 
     inset: 7px;
 
-    border: 1px solid rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255,255,255,.15);
 
     pointer-events: none;
 
@@ -851,7 +837,6 @@ body {
     display: block;
 
     object-fit: cover;
-
     object-position: center;
 
     filter:
@@ -882,7 +867,6 @@ body {
     color: #bcb5a8;
 
     font-size: 17px;
-
     line-height: 1.7;
 
     font-style: italic;
@@ -902,7 +886,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 11px;
-
     line-height: 1.7;
 }
 
@@ -954,7 +937,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 8px;
-
     letter-spacing: 3px;
 }
 
@@ -966,7 +948,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     letter-spacing: 4px;
 }
 
@@ -1096,7 +1077,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 8px;
-
     letter-spacing: 2px;
 }
 
@@ -1108,7 +1088,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     line-height: 1.7;
 }
 
@@ -1203,7 +1182,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     line-height: 1.7;
 }
 
@@ -1234,7 +1212,6 @@ body {
 
     font-size: 10px;
     font-weight: bold;
-
     letter-spacing: 2px;
 
     cursor: pointer;
@@ -1265,7 +1242,6 @@ body {
     padding: 100px 25px;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
@@ -1291,7 +1267,7 @@ body {
 
     padding: 45px 25px;
 
-    border: 1px solid rgba(169, 137, 80, .45);
+    border: 1px solid rgba(169,137,80,.45);
 
     background:
         linear-gradient(
@@ -1301,7 +1277,7 @@ body {
         );
 
     box-shadow:
-        0 20px 60px rgba(0, 0, 0, .35);
+        0 20px 60px rgba(0,0,0,.35);
 }
 
 .location-pin {
@@ -1342,7 +1318,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 13px;
-
     line-height: 1.6;
 }
 
@@ -1354,7 +1329,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     line-height: 1.6;
 }
 
@@ -1373,7 +1347,6 @@ body {
     padding: 100px 20px;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
@@ -1469,6 +1442,7 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
+
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -1542,7 +1516,6 @@ body {
     padding: 100px 25px;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
@@ -1749,28 +1722,23 @@ body {
 
     .small-text {
         font-size: 11px;
-
         letter-spacing: 2.5px;
     }
 
     .secret-subtitle {
         font-size: 13px;
-
         line-height: 1.65;
     }
 
     .instruction {
         font-size: 14px;
-
         line-height: 1.6;
     }
 
     .open-button,
     .continue-button {
         font-size: 12px;
-
         padding: 15px 24px;
-
         letter-spacing: 1.5px;
     }
 
@@ -1808,19 +1776,6 @@ body {
         font-size: 13px;
 
         line-height: 1.75;
-    }
-
-
-    /* FOTO */
-
-    .birthday-photo {
-        width: 175px;
-
-        height: 220px;
-
-        margin:
-            25px auto
-            5px;
     }
 
 
@@ -2063,5 +2018,17 @@ body {
         font-size: 13px !important;
 
         line-height: 1.8;
+    }
+
+
+    /* FOTO EN CELULAR */
+
+    .birthday-photo {
+        width: 175px;
+        height: 220px;
+
+        margin:
+            25px auto
+            5px;
     }
 }
