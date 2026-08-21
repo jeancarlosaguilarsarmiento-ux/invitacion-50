@@ -466,12 +466,7 @@ body {
 
 
 /* =========================================
-   DESTELLOS DORADOS
-   CORRECCIÓN:
-   - Capa independiente
-   - Sin transform
-   - Sin filter
-   - Sin alterar fondos
+   DESTELLOS Y PARTÍCULAS DORADAS
 ========================================= */
 
 .invitation::before {
@@ -479,11 +474,10 @@ body {
 
     position: fixed;
 
-    top: 0;
-    left: 0;
+    inset: 0;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     z-index: 2;
 
@@ -491,83 +485,181 @@ body {
 
     background-image:
 
+        /* DESTELLO 1 */
         radial-gradient(
             circle at 7% 14%,
-            rgba(255,220,150,.95) 0,
-            rgba(255,220,150,.95) 1.5px,
-            transparent 3px
+            rgba(255, 221, 150, 1) 0,
+            rgba(255, 221, 150, .95) 2px,
+            rgba(255, 221, 150, .35) 4px,
+            transparent 8px
         ),
 
+        /* DESTELLO 2 */
         radial-gradient(
             circle at 17% 32%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            rgba(255, 245, 205, 1) 0,
+            rgba(255, 245, 205, .9) 1.5px,
+            rgba(255, 220, 150, .35) 4px,
+            transparent 7px
         ),
 
+        /* DESTELLO 3 */
         radial-gradient(
             circle at 28% 74%,
-            rgba(221,181,105,.85) 0,
-            rgba(221,181,105,.85) 1.5px,
-            transparent 3px
+            rgba(231, 190, 112, 1) 0,
+            rgba(231, 190, 112, .9) 2px,
+            rgba(231, 190, 112, .3) 5px,
+            transparent 9px
         ),
 
+        /* DESTELLO 4 */
         radial-gradient(
             circle at 38% 20%,
-            rgba(255,235,185,.8) 0,
-            rgba(255,235,185,.8) 1px,
-            transparent 3px
+            rgba(255, 235, 185, 1) 0,
+            rgba(255, 235, 185, .9) 1.5px,
+            rgba(255, 220, 150, .3) 4px,
+            transparent 8px
         ),
 
+        /* DESTELLO 5 */
         radial-gradient(
             circle at 47% 83%,
-            rgba(255,255,255,.6) 0,
-            rgba(255,255,255,.6) 1px,
-            transparent 3px
+            rgba(255, 250, 220, 1) 0,
+            rgba(255, 250, 220, .8) 1.5px,
+            rgba(255, 220, 150, .3) 4px,
+            transparent 8px
         ),
 
+        /* DESTELLO 6 */
         radial-gradient(
             circle at 61% 17%,
-            rgba(255,215,135,.95) 0,
-            rgba(255,215,135,.95) 1.5px,
-            transparent 3px
+            rgba(255, 215, 135, 1) 0,
+            rgba(255, 215, 135, .95) 2px,
+            rgba(255, 215, 135, .35) 5px,
+            transparent 9px
         ),
 
+        /* DESTELLO 7 */
         radial-gradient(
             circle at 72% 43%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            rgba(255, 250, 220, 1) 0,
+            rgba(255, 250, 220, .85) 1.5px,
+            rgba(255, 220, 150, .3) 4px,
+            transparent 8px
         ),
 
+        /* DESTELLO 8 */
         radial-gradient(
             circle at 81% 69%,
-            rgba(216,174,96,.9) 0,
-            rgba(216,174,96,.9) 1.5px,
-            transparent 3px
+            rgba(225, 181, 100, 1) 0,
+            rgba(225, 181, 100, .95) 2px,
+            rgba(225, 181, 100, .35) 5px,
+            transparent 9px
         ),
 
+        /* DESTELLO 9 */
         radial-gradient(
             circle at 90% 27%,
-            rgba(255,220,150,.9) 0,
-            rgba(255,220,150,.9) 1.5px,
-            transparent 3px
+            rgba(255, 220, 150, 1) 0,
+            rgba(255, 220, 150, .95) 2px,
+            rgba(255, 220, 150, .35) 5px,
+            transparent 9px
+        ),
+
+        /* DESTELLO 10 */
+        radial-gradient(
+            circle at 95% 86%,
+            rgba(255, 250, 220, 1) 0,
+            rgba(255, 250, 220, .85) 1.5px,
+            rgba(255, 220, 150, .3) 4px,
+            transparent 8px
+        ),
+
+        /* PARTÍCULAS PEQUEÑAS */
+        radial-gradient(
+            circle at 12% 58%,
+            rgba(201, 169, 110, .85) 0,
+            rgba(201, 169, 110, .5) 1px,
+            transparent 4px
         ),
 
         radial-gradient(
-            circle at 95% 86%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            circle at 23% 12%,
+            rgba(255, 230, 170, .8) 0,
+            rgba(255, 230, 170, .4) 1px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 34% 55%,
+            rgba(201, 169, 110, .75) 0,
+            rgba(201, 169, 110, .4) 1px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 54% 35%,
+            rgba(255, 230, 170, .8) 0,
+            rgba(255, 230, 170, .4) 1px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 67% 78%,
+            rgba(201, 169, 110, .8) 0,
+            rgba(201, 169, 110, .4) 1px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 76% 15%,
+            rgba(255, 230, 170, .8) 0,
+            rgba(255, 230, 170, .4) 1px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 87% 57%,
+            rgba(201, 169, 110, .8) 0,
+            rgba(201, 169, 110, .4) 1px,
+            transparent 4px
         );
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    opacity: .7;
+    opacity: .85;
 
     animation:
-        starsTwinkle 4.5s ease-in-out infinite alternate;
+        starsTwinkle 3.8s ease-in-out infinite alternate;
+}
+
+
+/* =========================================
+   ANIMACIÓN DE DESTELLOS
+========================================= */
+
+@keyframes starsTwinkle {
+
+    0% {
+        opacity: .45;
+    }
+
+    25% {
+        opacity: .75;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: .65;
+    }
+
+    100% {
+        opacity: .95;
+    }
 }
 
 
