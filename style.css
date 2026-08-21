@@ -8,24 +8,18 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     min-height: 100vh;
-
     background: #080808;
-
     color: #f5f1e8;
-
     font-family:
         Georgia,
         "Times New Roman",
         serif;
-
     overflow-x: hidden;
 }
 
@@ -35,56 +29,41 @@ body {
 ========================================= */
 
 .surprise-badge {
-
     position: fixed;
-
     top: 15px;
     left: 50%;
-
     transform: translateX(-50%);
 
     z-index: 250;
 
     display: flex;
-
     align-items: center;
-
     gap: 7px;
 
     padding: 8px 14px;
 
-    border: 1px solid
-        rgba(169,137,80,.55);
-
+    border: 1px solid rgba(169, 137, 80, .55);
     border-radius: 30px;
 
-    background:
-        rgba(10,9,7,.88);
+    background: rgba(10, 9, 7, .92);
 
-    backdrop-filter:
-        blur(8px);
+    backdrop-filter: blur(8px);
 
     color: #c9a96e;
 
     font-family: Arial, sans-serif;
-
     font-size: 8px;
-
     letter-spacing: 2px;
 
     white-space: nowrap;
 
     box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.35);
-
+        0 8px 25px rgba(0, 0, 0, .35);
 }
-
 
 .surprise-badge span:first-child {
     font-size: 12px;
 }
-
 
 
 /* =========================================
@@ -92,7 +71,6 @@ body {
 ========================================= */
 
 .music-button {
-
     position: fixed;
 
     right: 18px;
@@ -103,8 +81,7 @@ body {
 
     border-radius: 50%;
 
-    background:
-        rgba(20,18,14,.92);
+    background: rgba(20, 18, 14, .92);
 
     border: 1px solid #a98950;
 
@@ -117,53 +94,39 @@ body {
     z-index: 200;
 
     box-shadow:
-        0 5px 20px
-        rgba(0,0,0,.4);
+        0 5px 20px rgba(0, 0, 0, .4);
 
     transition:
         transform .3s ease,
         background .3s ease;
 }
 
-
 .music-button:hover {
-
     transform: scale(1.08);
 
     background: #a98950;
 
     color: #111;
-
 }
 
-
 .music-button.playing {
-
     animation:
         musicPulse 2s infinite;
 }
 
-
 @keyframes musicPulse {
 
-    0%, 100% {
-
+    0%,
+    100% {
         box-shadow:
-            0 0 0
-            rgba(169,137,80,0);
-
+            0 0 0 rgba(169, 137, 80, 0);
     }
 
     50% {
-
         box-shadow:
-            0 0 22px
-            rgba(169,137,80,.5);
-
+            0 0 22px rgba(169, 137, 80, .5);
     }
-
 }
-
 
 
 /* =========================================
@@ -171,15 +134,12 @@ body {
 ========================================= */
 
 .opening {
-
     position: fixed;
 
     inset: 0;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     background:
@@ -197,28 +157,18 @@ body {
         visibility 1.2s ease;
 }
 
-
 .opening.hide {
-
     opacity: 0;
-
     visibility: hidden;
-
     pointer-events: none;
 }
 
-
 .opening-content {
-
     width: 100%;
-
     max-width: 600px;
-
     padding: 30px;
-
     text-align: center;
 }
-
 
 
 /* =========================================
@@ -226,7 +176,6 @@ body {
 ========================================= */
 
 .secret-message {
-
     margin-bottom: 22px;
 
     color: #c7a25e;
@@ -234,7 +183,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 9px;
-
     font-weight: bold;
 
     letter-spacing: 3px;
@@ -243,9 +191,7 @@ body {
         secretPulse 3s infinite;
 }
 
-
 .secret-subtitle {
-
     margin-bottom: 22px;
 
     color: #817a6f;
@@ -255,22 +201,19 @@ body {
     font-size: 11px;
 
     line-height: 1.6;
-
 }
-
 
 @keyframes secretPulse {
 
-    0%, 100% {
+    0%,
+    100% {
         opacity: .65;
     }
 
     50% {
         opacity: 1;
     }
-
 }
-
 
 
 /* =========================================
@@ -278,7 +221,6 @@ body {
 ========================================= */
 
 .small-text {
-
     margin-bottom: 35px;
 
     color: #c9a96e;
@@ -286,12 +228,10 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 11px;
-
     font-weight: 600;
 
     letter-spacing: 4px;
 }
-
 
 
 /* =========================================
@@ -299,9 +239,7 @@ body {
 ========================================= */
 
 .envelope-container {
-
     width: 310px;
-
     height: 210px;
 
     margin: 0 auto 30px;
@@ -309,29 +247,22 @@ body {
     perspective: 1200px;
 }
 
-
 .envelope {
-
     position: relative;
 
     width: 100%;
-
     height: 100%;
 
     transform-style: preserve-3d;
 
     filter:
         drop-shadow(
-            0 25px 30px
-            rgba(0,0,0,.55)
+            0 25px 30px rgba(0, 0, 0, .55)
         );
 }
 
-
 .envelope-back {
-
     position: absolute;
-
     inset: 0;
 
     background:
@@ -342,13 +273,10 @@ body {
         );
 
     border: 1px solid #6e5835;
-
     border-radius: 3px;
 }
 
-
 .letter {
-
     position: absolute;
 
     left: 15%;
@@ -380,21 +308,16 @@ body {
         );
 
     box-shadow:
-        0 5px 20px
-        rgba(0,0,0,.3);
+        0 5px 20px rgba(0, 0, 0, .3);
 }
 
-
 .letter-content {
-
     height: 100%;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 5px;
@@ -402,17 +325,12 @@ body {
     font-family: Georgia, serif;
 }
 
-
 .letter-content span {
-
     font-size: 10px;
-
     letter-spacing: 3px;
 }
 
-
 .letter-content strong {
-
     font-size: 55px;
 
     font-weight: normal;
@@ -420,11 +338,8 @@ body {
     color: #9c7739;
 }
 
-
 .envelope-front {
-
     position: absolute;
-
     inset: 0;
 
     background:
@@ -448,9 +363,7 @@ body {
     z-index: 4;
 }
 
-
 .envelope-flap {
-
     position: absolute;
 
     top: 0;
@@ -473,8 +386,7 @@ body {
             50% 55%
         );
 
-    transform-origin:
-        top center;
+    transform-origin: top center;
 
     z-index: 5;
 
@@ -488,26 +400,15 @@ body {
         );
 }
 
-
-.envelope.open
-.envelope-flap {
-
-    transform:
-        rotateX(180deg);
-
+.envelope.open .envelope-flap {
+    transform: rotateX(180deg);
     z-index: 1;
 }
 
-
-.envelope.open
-.letter {
-
-    transform:
-        translateY(-100px);
-
+.envelope.open .letter {
+    transform: translateY(-100px);
     z-index: 6;
 }
-
 
 
 /* =========================================
@@ -515,7 +416,6 @@ body {
 ========================================= */
 
 .instruction {
-
     margin-bottom: 15px;
 
     color: #aaa294;
@@ -528,14 +428,12 @@ body {
 }
 
 
-
 /* =========================================
    BOTONES
 ========================================= */
 
 .open-button,
 .continue-button {
-
     padding: 15px 30px;
 
     background: transparent;
@@ -547,7 +445,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 11px;
-
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -560,10 +457,8 @@ body {
         transform .3s ease;
 }
 
-
 .open-button:hover,
 .continue-button:hover {
-
     background: #b18b50;
 
     color: #111;
@@ -573,19 +468,16 @@ body {
 }
 
 
-
 /* =========================================
    INVITACIÓN
 ========================================= */
 
 .invitation {
-
     min-height: 100vh;
 
     position: relative;
 
     opacity: 0;
-
     visibility: hidden;
 
     transition:
@@ -593,13 +485,17 @@ body {
         visibility 1.5s ease;
 }
 
+.invitation.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* =========================================
-   DESTELLOS DORADOS
+   DESTELLOS ELEGANTES
 ========================================= */
 
 .invitation::before {
-
     content: "";
 
     position: fixed;
@@ -613,90 +509,75 @@ body {
     background-image:
 
         radial-gradient(
-            circle at 7% 14%,
-            rgba(255,220,150,.95) 0,
-            rgba(255,220,150,.95) 1.5px,
-            transparent 3px
+            circle at 7% 18%,
+            rgba(255, 231, 170, .95) 0,
+            rgba(255, 231, 170, .95) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 17% 32%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            circle at 18% 73%,
+            rgba(255, 255, 255, .85) 0,
+            rgba(255, 255, 255, .85) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 28% 74%,
-            rgba(221,181,105,.85) 0,
-            rgba(221,181,105,.85) 1.5px,
-            transparent 3px
+            circle at 31% 29%,
+            rgba(214, 181, 112, .8) 0,
+            rgba(214, 181, 112, .8) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 38% 20%,
-            rgba(255,235,185,.8) 0,
-            rgba(255,235,185,.8) 1px,
-            transparent 3px
+            circle at 45% 84%,
+            rgba(255, 255, 255, .75) 0,
+            rgba(255, 255, 255, .75) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 47% 83%,
-            rgba(255,255,255,.6) 0,
-            rgba(255,255,255,.6) 1px,
-            transparent 3px
+            circle at 62% 17%,
+            rgba(255, 225, 160, .9) 0,
+            rgba(255, 225, 160, .9) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 61% 17%,
-            rgba(255,215,135,.95) 0,
-            rgba(255,215,135,.95) 1.5px,
-            transparent 3px
+            circle at 76% 63%,
+            rgba(255, 255, 255, .8) 0,
+            rgba(255, 255, 255, .8) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 72% 43%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            circle at 87% 32%,
+            rgba(214, 181, 112, .9) 0,
+            rgba(214, 181, 112, .9) 1px,
+            transparent 1.8px
         ),
 
         radial-gradient(
-            circle at 81% 69%,
-            rgba(216,174,96,.9) 0,
-            rgba(216,174,96,.9) 1.5px,
-            transparent 3px
-        ),
-
-        radial-gradient(
-            circle at 90% 27%,
-            rgba(255,220,150,.9) 0,
-            rgba(255,220,150,.9) 1.5px,
-            transparent 3px
-        ),
-
-        radial-gradient(
-            circle at 95% 86%,
-            rgba(255,255,255,.65) 0,
-            rgba(255,255,255,.65) 1px,
-            transparent 3px
+            circle at 94% 86%,
+            rgba(255, 255, 255, .75) 0,
+            rgba(255, 255, 255, .75) 1px,
+            transparent 1.8px
         );
 
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
-    opacity: .75;
+    opacity: .9;
 
     animation:
-        starsTwinkle 4.5s ease-in-out infinite alternate;
+        starsTwinkle 4s ease-in-out infinite alternate;
 }
 
 
 /* =========================================
-   BRILLO AMBIENTAL
+   HALOS DE LUZ
 ========================================= */
 
 .invitation::after {
-
     content: "";
 
     position: fixed;
@@ -707,27 +588,35 @@ body {
 
     pointer-events: none;
 
-    background:
+    background-image:
 
         radial-gradient(
-            circle at 12% 18%,
-            rgba(201,169,110,.13),
-            transparent 18%
+            circle at 7% 18%,
+            rgba(255, 218, 145, .20) 0,
+            rgba(255, 218, 145, .08) 4px,
+            transparent 10px
         ),
 
         radial-gradient(
-            circle at 83% 30%,
-            rgba(201,169,110,.10),
-            transparent 20%
+            circle at 62% 17%,
+            rgba(255, 218, 145, .18) 0,
+            rgba(255, 218, 145, .06) 4px,
+            transparent 10px
         ),
 
         radial-gradient(
-            circle at 50% 72%,
-            rgba(201,169,110,.07),
-            transparent 25%
+            circle at 87% 32%,
+            rgba(255, 218, 145, .18) 0,
+            rgba(255, 218, 145, .06) 4px,
+            transparent 10px
         );
 
-    opacity: .9;
+    background-repeat: no-repeat;
+
+    opacity: .7;
+
+    animation:
+        glowTwinkle 5s ease-in-out infinite alternate;
 }
 
 
@@ -736,67 +625,41 @@ body {
 ========================================= */
 
 .invitation > * {
-
     position: relative;
-
     z-index: 3;
 }
 
 
-.invitation.show {
-
-    opacity: 1;
-
-    visibility: visible;
-}
-
-
-/* =========================================
-   ANIMACIÓN DE DESTELLOS
-========================================= */
-
 @keyframes starsTwinkle {
 
     0% {
-
-        opacity: .25;
-
-        transform:
-            scale(1);
-
-        filter:
-            brightness(.8);
+        opacity: .45;
     }
 
-    45% {
-
-        opacity: .55;
-
-        filter:
-            brightness(1.15);
-    }
-
-    70% {
-
-        opacity: .75;
-
-        filter:
-            brightness(1.45);
+    50% {
+        opacity: .85;
     }
 
     100% {
-
         opacity: 1;
-
-        transform:
-            scale(1.018);
-
-        filter:
-            brightness(1.8);
     }
-
 }
 
+
+@keyframes glowTwinkle {
+
+    0% {
+        opacity: .35;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: .45;
+    }
+}
 
 
 /* =========================================
@@ -804,15 +667,12 @@ body {
 ========================================= */
 
 .hero {
-
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     padding: 80px 25px 50px;
@@ -828,18 +688,13 @@ body {
         );
 }
 
-
 .secret-ribbon {
-
     margin-bottom: 25px;
 
     padding: 8px 15px;
 
-    border-top: 1px solid
-        rgba(169,137,80,.5);
-
-    border-bottom: 1px solid
-        rgba(169,137,80,.5);
+    border-top: 1px solid rgba(169, 137, 80, .5);
+    border-bottom: 1px solid rgba(169, 137, 80, .5);
 
     color: #b99557;
 
@@ -850,9 +705,7 @@ body {
     letter-spacing: 3px;
 }
 
-
 .eyebrow {
-
     margin-bottom: 20px;
 
     color: #c6a96a;
@@ -873,9 +726,7 @@ body {
         forwards 1s;
 }
 
-
 .hero h1 {
-
     font-size:
         clamp(
             38px,
@@ -897,9 +748,7 @@ body {
         forwards 1.3s;
 }
 
-
 .number {
-
     margin-top: 10px;
 
     color: #c7a25e;
@@ -931,9 +780,7 @@ body {
         forwards 1.5s;
 }
 
-
 .years {
-
     margin-top: 20px;
 
     font-family: Arial, sans-serif;
@@ -952,13 +799,11 @@ body {
 }
 
 
-
 /* =========================================
    FOTO DEL CUMPLEAÑERO
 ========================================= */
 
 .birthday-photo {
-
     width: 210px;
     height: 260px;
 
@@ -966,8 +811,7 @@ body {
 
     padding: 4px;
 
-    border: 1px solid
-        rgba(201,169,110,.75);
+    border: 1px solid rgba(201, 169, 110, .75);
 
     background:
         linear-gradient(
@@ -978,37 +822,29 @@ body {
         );
 
     box-shadow:
-        0 15px 45px
-        rgba(0,0,0,.55),
-
-        0 0 35px
-        rgba(169,137,80,.12);
+        0 15px 45px rgba(0, 0, 0, .55),
+        0 0 35px rgba(169, 137, 80, .12);
 
     position: relative;
 
     overflow: hidden;
 }
 
-
 .birthday-photo::before {
-
     content: "";
 
     position: absolute;
 
     inset: 7px;
 
-    border: 1px solid
-        rgba(255,255,255,.15);
+    border: 1px solid rgba(255, 255, 255, .15);
 
     pointer-events: none;
 
     z-index: 2;
 }
 
-
 .birthday-photo img {
-
     width: 100%;
     height: 100%;
 
@@ -1025,11 +861,8 @@ body {
     transform: scale(1.01);
 }
 
-
 .line {
-
     width: 70px;
-
     height: 1px;
 
     margin: 30px auto;
@@ -1043,9 +876,7 @@ body {
         forwards 2.1s;
 }
 
-
 .welcome {
-
     max-width: 450px;
 
     color: #bcb5a8;
@@ -1063,9 +894,7 @@ body {
         forwards 2.3s;
 }
 
-
 .secret-text {
-
     margin-top: 22px;
 
     color: #8d8476;
@@ -1077,15 +906,11 @@ body {
     line-height: 1.7;
 }
 
-
 .secret-text strong {
-
     color: #b99557;
 }
 
-
 .continue-button {
-
     margin-top: 30px;
 
     opacity: 0;
@@ -1096,23 +921,19 @@ body {
 }
 
 
-
 /* =========================================
    SECCIONES
 ========================================= */
 
 .section {
-
     min-height: 80vh;
 
     padding: 100px 25px;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -1125,9 +946,7 @@ body {
         );
 }
 
-
 .section-secret {
-
     margin-bottom: 25px;
 
     color: #917548;
@@ -1139,9 +958,7 @@ body {
     letter-spacing: 3px;
 }
 
-
 .section-label {
-
     margin-bottom: 18px;
 
     color: #b99557;
@@ -1153,9 +970,7 @@ body {
     letter-spacing: 4px;
 }
 
-
 .section h2 {
-
     font-size:
         clamp(
             32px,
@@ -1168,11 +983,8 @@ body {
     color: #eee7da;
 }
 
-
 .gold-line {
-
     width: 60px;
-
     height: 1px;
 
     margin: 25px auto;
@@ -1181,13 +993,11 @@ body {
 }
 
 
-
 /* =========================================
    FRASE
 ========================================= */
 
 .quote-section {
-
     background:
         radial-gradient(
             circle at center,
@@ -1196,9 +1006,7 @@ body {
         );
 }
 
-
 .quote {
-
     max-width: 650px;
 
     color: #c5beb1;
@@ -1216,13 +1024,11 @@ body {
 }
 
 
-
 /* =========================================
    CUENTA REGRESIVA
 ========================================= */
 
 .countdown-section {
-
     min-height: 65vh;
 
     padding: 90px 20px;
@@ -1232,9 +1038,7 @@ body {
     background: #0b0b0b;
 }
 
-
 .countdown-section h2 {
-
     margin-bottom: 45px;
 
     font-size:
@@ -1247,11 +1051,8 @@ body {
     font-weight: normal;
 }
 
-
 .countdown {
-
     width: 100%;
-
     max-width: 650px;
 
     margin-left: auto;
@@ -1265,19 +1066,14 @@ body {
     gap: 12px;
 }
 
-
 .count-box {
-
     padding: 20px 5px;
 
     border-top: 1px solid #6e5835;
-
     border-bottom: 1px solid #6e5835;
 }
 
-
 .count-box span {
-
     display: block;
 
     color: #c9a15a;
@@ -1290,9 +1086,7 @@ body {
         );
 }
 
-
 .count-box small {
-
     display: block;
 
     margin-top: 8px;
@@ -1306,9 +1100,7 @@ body {
     letter-spacing: 2px;
 }
 
-
 .countdown-note {
-
     margin-top: 35px;
 
     color: #7e766b;
@@ -1321,13 +1113,11 @@ body {
 }
 
 
-
 /* =========================================
    EVENTO
 ========================================= */
 
 .event-section {
-
     background:
         radial-gradient(
             circle at center,
@@ -1336,9 +1126,7 @@ body {
         );
 }
 
-
 .event-year {
-
     margin-top: 8px;
 
     color: #a98950;
@@ -1348,11 +1136,8 @@ body {
     letter-spacing: 5px;
 }
 
-
 .event-details {
-
     width: 100%;
-
     max-width: 500px;
 
     margin: 50px auto 35px;
@@ -1364,9 +1149,7 @@ body {
     gap: 50px;
 }
 
-
 .event-item {
-
     display: flex;
 
     align-items: center;
@@ -1376,11 +1159,8 @@ body {
     text-align: left;
 }
 
-
 .event-icon {
-
     width: 42px;
-
     height: 42px;
 
     border: 1px solid #a98950;
@@ -1390,15 +1170,12 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     color: #c9a15a;
 }
 
-
 .event-item strong {
-
     display: block;
 
     color: #eee7da;
@@ -1406,9 +1183,7 @@ body {
     font-size: 16px;
 }
 
-
 .event-item span {
-
     display: block;
 
     margin-top: 5px;
@@ -1420,9 +1195,7 @@ body {
     font-size: 12px;
 }
 
-
 .secret-note {
-
     margin-top: 30px;
 
     color: #857c6e;
@@ -1435,17 +1208,14 @@ body {
 }
 
 
-
 /* =========================================
    BOTÓN DORADO
 ========================================= */
 
 .gold-button {
-
     display: inline-flex;
 
     justify-content: center;
-
     align-items: center;
 
     min-width: 210px;
@@ -1463,7 +1233,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -1476,9 +1245,7 @@ body {
         transform .3s ease;
 }
 
-
 .gold-button:hover {
-
     background: #b18b50;
 
     color: #111;
@@ -1488,13 +1255,11 @@ body {
 }
 
 
-
 /* =========================================
    UBICACIÓN
 ========================================= */
 
 .location-section {
-
     min-height: 75vh;
 
     padding: 100px 25px;
@@ -1510,9 +1275,7 @@ body {
     background: #0b0b0b;
 }
 
-
 .location-text {
-
     max-width: 450px;
 
     margin: 20px 0 40px;
@@ -1522,17 +1285,13 @@ body {
     line-height: 1.7;
 }
 
-
 .location-card {
-
     width: 100%;
-
     max-width: 430px;
 
     padding: 45px 25px;
 
-    border: 1px solid
-        rgba(169,137,80,.45);
+    border: 1px solid rgba(169, 137, 80, .45);
 
     background:
         linear-gradient(
@@ -1542,15 +1301,11 @@ body {
         );
 
     box-shadow:
-        0 20px 60px
-        rgba(0,0,0,.35);
+        0 20px 60px rgba(0, 0, 0, .35);
 }
 
-
 .location-pin {
-
     width: 55px;
-
     height: 55px;
 
     margin: 0 auto 20px;
@@ -1558,7 +1313,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border: 1px solid #a98950;
@@ -1570,9 +1324,7 @@ body {
     font-size: 20px;
 }
 
-
 .location-card h3 {
-
     margin-bottom: 12px;
 
     color: #e8dfd1;
@@ -1582,9 +1334,7 @@ body {
     font-weight: normal;
 }
 
-
 .location-card p {
-
     margin-bottom: 30px;
 
     color: #999187;
@@ -1596,9 +1346,7 @@ body {
     line-height: 1.6;
 }
 
-
 .location-secret {
-
     margin-top: 25px;
 
     color: #81786a;
@@ -1610,12 +1358,9 @@ body {
     line-height: 1.6;
 }
 
-
 .location-secret strong {
-
     color: #b99557;
 }
-
 
 
 /* =========================================
@@ -1623,7 +1368,6 @@ body {
 ========================================= */
 
 .confirmation-section {
-
     min-height: 80vh;
 
     padding: 100px 20px;
@@ -1644,9 +1388,7 @@ body {
         );
 }
 
-
 .confirmation-section h2 {
-
     font-size:
         clamp(
             35px,
@@ -1657,9 +1399,7 @@ body {
     font-weight: normal;
 }
 
-
 .confirmation-section > p:not(.section-label):not(.confirmation-note):not(.big-secret) {
-
     max-width: 500px;
 
     margin: 20px 0 35px;
@@ -1669,9 +1409,7 @@ body {
     line-height: 1.7;
 }
 
-
 .guest-selector {
-
     display: flex;
 
     flex-direction: column;
@@ -1683,9 +1421,7 @@ body {
     margin-bottom: 30px;
 }
 
-
 .guest-selector label {
-
     color: #b9ae9d;
 
     font-family: Arial, sans-serif;
@@ -1695,9 +1431,7 @@ body {
     letter-spacing: 1px;
 }
 
-
 .guest-selector select {
-
     min-width: 220px;
 
     padding: 13px 18px;
@@ -1713,9 +1447,7 @@ body {
     outline: none;
 }
 
-
 .confirmation-buttons {
-
     display: flex;
 
     flex-direction: column;
@@ -1723,14 +1455,11 @@ body {
     gap: 12px;
 
     width: 100%;
-
     max-width: 320px;
 }
 
-
 .confirm-button,
 .decline-button {
-
     width: 100%;
 
     padding: 15px;
@@ -1740,7 +1469,6 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 10px;
-
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -1748,9 +1476,7 @@ body {
     transition: .3s ease;
 }
 
-
 .confirm-button {
-
     background: #a98950;
 
     border: 1px solid #a98950;
@@ -1758,18 +1484,14 @@ body {
     color: #111;
 }
 
-
 .confirm-button:hover {
-
     background: #c4a665;
 
     transform:
         translateY(-2px);
 }
 
-
 .decline-button {
-
     background: transparent;
 
     border: 1px solid #554936;
@@ -1777,17 +1499,13 @@ body {
     color: #968c7c;
 }
 
-
 .decline-button:hover {
-
     border-color: #a98950;
 
     color: #c9a15a;
 }
 
-
 .confirmation-note {
-
     margin-top: 20px;
 
     color: #777168;
@@ -1797,9 +1515,7 @@ body {
     font-size: 10px;
 }
 
-
 .big-secret {
-
     margin-top: 35px;
 
     color: #857c6e;
@@ -1811,12 +1527,9 @@ body {
     line-height: 1.8;
 }
 
-
 .big-secret strong {
-
     color: #b99557;
 }
-
 
 
 /* =========================================
@@ -1824,7 +1537,6 @@ body {
 ========================================= */
 
 .final-section {
-
     min-height: 85vh;
 
     padding: 100px 25px;
@@ -1834,7 +1546,6 @@ body {
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -1847,9 +1558,7 @@ body {
         );
 }
 
-
 .final-number {
-
     color: #c19a54;
 
     font-size:
@@ -1864,9 +1573,7 @@ body {
     font-weight: normal;
 }
 
-
 .final-section p {
-
     max-width: 400px;
 
     margin: 10px 0 30px;
@@ -1880,9 +1587,7 @@ body {
     line-height: 1.6;
 }
 
-
 .final-section > strong {
-
     color: #ddd4c5;
 
     font-family: Arial, sans-serif;
@@ -1892,9 +1597,7 @@ body {
     letter-spacing: 3px;
 }
 
-
 .final-section span {
-
     margin-top: 12px;
 
     color: #9e8251;
@@ -1906,9 +1609,7 @@ body {
     letter-spacing: 4px;
 }
 
-
 .final-secret {
-
     margin-top: 55px !important;
 
     color: #867b6c !important;
@@ -1920,14 +1621,11 @@ body {
     font-style: normal !important;
 }
 
-
 .final-secret strong {
-
     color: #b99557;
 
     letter-spacing: 2px;
 }
-
 
 
 /* =========================================
@@ -1935,7 +1633,6 @@ body {
 ========================================= */
 
 .reveal {
-
     opacity: 0;
 
     transform:
@@ -1946,15 +1643,12 @@ body {
         transform 1s ease;
 }
 
-
 .reveal.visible {
-
     opacity: 1;
 
     transform:
         translateY(0);
 }
-
 
 
 /* =========================================
@@ -1964,65 +1658,47 @@ body {
 @keyframes fadeUp {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(20px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0);
-
     }
-
 }
-
 
 @keyframes fadeIn {
 
     from {
-
         opacity: 0;
-
     }
 
     to {
-
         opacity: 1;
-
     }
-
 }
-
 
 @keyframes numberReveal {
 
     from {
-
         opacity: 0;
 
         transform:
             scale(.7);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             scale(1);
-
     }
-
 }
-
 
 
 /* =========================================
@@ -2034,7 +1710,6 @@ body {
     /* MENSAJE SECRETO FIJO */
 
     .surprise-badge {
-
         top: 10px;
 
         left: 50%;
@@ -2064,46 +1739,34 @@ body {
     /* PANTALLA INICIAL */
 
     .envelope-container {
-
         width: 280px;
-
         height: 190px;
     }
 
-
     .opening-content {
-
         padding: 20px;
     }
 
-
     .small-text {
-
         font-size: 11px;
 
         letter-spacing: 2.5px;
     }
 
-
     .secret-subtitle {
-
         font-size: 13px;
 
         line-height: 1.65;
     }
 
-
     .instruction {
-
         font-size: 14px;
 
         line-height: 1.6;
     }
 
-
     .open-button,
     .continue-button {
-
         font-size: 12px;
 
         padding: 15px 24px;
@@ -2115,14 +1778,11 @@ body {
     /* PORTADA */
 
     .hero {
-
         padding:
             95px 20px 45px;
     }
 
-
     .secret-ribbon {
-
         font-size: 9px;
 
         letter-spacing: 2px;
@@ -2130,9 +1790,7 @@ body {
         line-height: 1.5;
     }
 
-
     .eyebrow {
-
         font-size: 11px;
 
         letter-spacing: 2.5px;
@@ -2140,44 +1798,48 @@ body {
         line-height: 1.5;
     }
 
-
     .welcome {
-
         font-size: 18px;
 
         line-height: 1.75;
     }
 
-
     .secret-text {
-
         font-size: 13px;
 
         line-height: 1.75;
     }
 
 
+    /* FOTO */
+
+    .birthday-photo {
+        width: 175px;
+
+        height: 220px;
+
+        margin:
+            25px auto
+            5px;
+    }
+
+
     /* SECCIONES */
 
     .section {
-
         min-height: 90vh;
 
         padding:
             85px 20px;
     }
 
-
     .section-secret {
-
         font-size: 10px;
 
         letter-spacing: 2px;
     }
 
-
     .section-label {
-
         font-size: 12px;
 
         letter-spacing: 2.5px;
@@ -2185,9 +1847,7 @@ body {
         line-height: 1.5;
     }
 
-
     .section h2 {
-
         font-size:
             clamp(
                 32px,
@@ -2202,7 +1862,6 @@ body {
     /* FRASE */
 
     .quote {
-
         font-size: 20px;
 
         line-height: 1.75;
@@ -2212,34 +1871,25 @@ body {
     /* CUENTA REGRESIVA */
 
     .countdown {
-
         gap: 6px;
     }
 
-
     .count-box {
-
         padding:
             15px 3px;
     }
 
-
     .count-box span {
-
         font-size: 30px;
     }
 
-
     .count-box small {
-
         font-size: 9px;
 
         letter-spacing: 1px;
     }
 
-
     .countdown-note {
-
         font-size: 12px;
 
         line-height: 1.7;
@@ -2249,15 +1899,12 @@ body {
     /* EVENTO */
 
     .event-year {
-
         font-size: 13px;
 
         letter-spacing: 4px;
     }
 
-
     .event-details {
-
         flex-direction: column;
 
         gap: 25px;
@@ -2267,29 +1914,21 @@ body {
         width: auto;
     }
 
-
     .event-item strong {
-
         font-size: 18px;
     }
 
-
     .event-item span {
-
         font-size: 14px;
     }
 
-
     .secret-note {
-
         font-size: 12px;
 
         line-height: 1.7;
     }
 
-
     .gold-button {
-
         min-width: 220px;
 
         padding: 15px 22px;
@@ -2303,45 +1942,34 @@ body {
     /* UBICACIÓN */
 
     .location-section {
-
         padding:
             85px 20px;
     }
 
-
     .location-text {
-
         font-size: 17px;
 
         line-height: 1.75;
     }
 
-
     .location-card {
-
         padding:
             40px 22px;
     }
 
-
     .location-card h3 {
-
         font-size: 23px;
 
         line-height: 1.3;
     }
 
-
     .location-card p {
-
         font-size: 15px;
 
         line-height: 1.7;
     }
 
-
     .location-secret {
-
         font-size: 12px;
 
         line-height: 1.7;
@@ -2351,14 +1979,11 @@ body {
     /* CONFIRMACIÓN */
 
     .confirmation-section {
-
         padding:
             85px 20px;
     }
 
-
     .confirmation-section h2 {
-
         font-size:
             clamp(
                 35px,
@@ -2369,32 +1994,24 @@ body {
         line-height: 1.15;
     }
 
-
     .confirmation-section > p:not(.section-label):not(.confirmation-note):not(.big-secret) {
-
         font-size: 17px;
 
         line-height: 1.75;
     }
 
-
     .guest-selector label {
-
         font-size: 13px;
     }
 
-
     .guest-selector select {
-
         font-size: 15px;
 
         padding: 14px 18px;
     }
 
-
     .confirm-button,
     .decline-button {
-
         font-size: 11px;
 
         padding: 16px;
@@ -2402,17 +2019,13 @@ body {
         letter-spacing: 1.5px;
     }
 
-
     .confirmation-note {
-
         font-size: 12px;
 
         line-height: 1.6;
     }
 
-
     .big-secret {
-
         font-size: 12px;
 
         line-height: 1.8;
@@ -2422,22 +2035,17 @@ body {
     /* CIERRE */
 
     .final-section {
-
         padding:
             90px 20px;
     }
 
-
     .final-section p {
-
         font-size: 19px;
 
         line-height: 1.7;
     }
 
-
     .final-section > strong {
-
         font-size: 12px;
 
         letter-spacing: 2px;
@@ -2445,34 +2053,15 @@ body {
         line-height: 1.5;
     }
 
-
     .final-section span {
-
         font-size: 11px;
 
         letter-spacing: 3px;
     }
 
-
     .final-secret {
-
         font-size: 13px !important;
 
         line-height: 1.8;
     }
-
-
-    /* FOTO EN CELULAR */
-
-    .birthday-photo {
-
-        width: 175px;
-
-        height: 220px;
-
-        margin:
-            25px auto
-            5px;
-    }
-
 }
